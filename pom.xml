@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tangwangwang</groupId>
+    <artifactId>multiple-data-redis-spring-boot-stater</artifactId>
+    <version>2.7.10-SNAPSHOT</version>
+
+    <name>Multiple Data Redis Spring Boot Stater</name>
+    <description>Multiple Data Redis Spring Boot Stater</description>
+    <url>https://github.com/tangwangwang/multiple-data-redis-spring-boot-stater</url>
+    <inceptionYear>2023</inceptionYear>
+
+    <properties>
+        <java-module-name>multiple-data-redis-spring-boot-stater</java-module-name>
+        <spring-boot>2.7.10-SNAPSHOT</spring-boot>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.7.10-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-libs-snapshot</id>
+            <url>https://repo.spring.io/libs-snapshot</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-plugins-release</id>
+            <url>https://repo.spring.io/plugins-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
